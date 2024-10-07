@@ -1,0 +1,148 @@
+/* Reset básico e estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    
+    /* Usa flexbox para o layout geral da página */
+    display: flex;
+
+    /* Organiza o elementos em coluna */
+    flex-direction: column;
+
+    /* Garante que o body ocupe toda a altura da viewport */
+    min-height: 90vh;
+
+    background-color: #796c6c;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #302e2e;
+    padding: 0.2rem;
+
+    /* Usa flexbox para o layout do cabeçalho */
+    display: flex;
+
+    /* Alinha os elementos do nav verticalmente */
+    align-items: center;
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.logo img {
+    height: 100px;
+    border-radius: 100%;
+    border: 50px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+
+    /* Usa flexbox para os itens de navegação */
+    display: flex;
+
+    /* Afasta os menus da extremidade direita da página */
+    margin-right: 2rem;
+}
+
+nav ul li {
+    /* Espaçamentos entre os itens do nav */
+    margin-left: 1rem;
+}
+
+a {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+/* Estilos do conteúdo principal */
+main {
+    /* Permite que o conteúdo principal cresça e ocupe o espaço disponível */
+    flex: 1;
+
+    width: 80%;
+    margin: 20px auto;
+
+    /* Usa flexbox para o layout do conteúdo principal */
+    display: flex;
+
+    /* Permite que os elemetos quebrem para a próxima linha */
+    flex-wrap: wrap;
+}
+
+article {
+    /* Não cresce, não encolhe, base de 70% */
+    flex: 0 0 70%;
+    background-color: #302e2e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+aside {
+    /* Não cresce, não encolhe, base de 28% */
+    flex: 0 0 28%;
+
+    background-color: #302e2e;
+    
+    padding: 1rem;
+
+    /* Cria espaço entre o artigo e a barra lateral */
+    margin-left: 2%;
+}
+
+section {
+    /* Ocupa toda a largura */
+    flex: 0 0 100%;
+
+    background-color:#302e2e;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #302e2e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.Euu {
+    height: 300px;
+    width: 280px;
+}
+
+
+.tag1 {
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.tag2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.tag3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.tag4 {
+    font-size: large;
+    font-weight: bold;
+}
